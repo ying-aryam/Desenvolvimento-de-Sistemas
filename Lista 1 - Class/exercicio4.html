@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Celular{
+            constructor(marca, modelo, armazenamento){
+                this.marca = marca;
+                this.modelo = modelo;
+                this.armazenamento = armazenamento;
+            }
+
+            informacoesCelular(){
+                return(console.log(`Marca do celular: ${this.marca}.\nModelo: ${this.modelo}.\nArmazenamento ${this.armazenamento}.`))
+            }
+        }
+        
+        let Celular1 = new Celular("Samsung","A23 5G", "128GB")
+        
+        console.log(`${Celular1.informacoesCelular()}`)
+        
+        
+    </script>
+</body>
+</html>

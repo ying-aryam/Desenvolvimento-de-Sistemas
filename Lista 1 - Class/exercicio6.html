@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Empresa{
+            constructor(nome, receitaAnual, depesasAnuais){
+                this.nome = nome;
+                this.receitaAnual = receitaAnual;
+                this.depesasAnuais = depesasAnuais;
+            }
+
+            calculaAnual(){
+                return(`${this.despesasAnuais - this.receitaAnual}`)
+            }
+
+            exibirRelatoriol(){
+                return(console.log(` ${this.nome}; ${this.receitaAnual}; ${this.despesasAnuais}; ${this.calculaAnual()}`))
+            }
+        }
+
+        let Empresa1 = new Empresa("aila", 4000, 100000)
+        let Empresa2 = new Empresa("Aila", 6000, 10000)
+
+        console.log(Empresa1)
+        console.log(`${Empresa1.calculaAnual()}`)
+        console.log(`${Empresa1.exibirRelatoriol()}`)
+
+        console.log(Empresa2)
+        console.log(`${Empresa2.calculaAnual()}`)
+        console.log(`${Empresa2.exibirRelatoriol()}`)
+    </script>
+</body>
+</html>
